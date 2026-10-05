@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>OldFeed</title>
+<title>AldariCorp</title>
 <meta name="theme-color" content="#1668d6">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="OldFeed">
+<meta name="apple-mobile-web-app-title" content="AldariCorp">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 
@@ -168,6 +168,115 @@ h1{margin:0;font-size:29px;line-height:1;font-weight:700;letter-spacing:-.5px;co
 #splash h1{font-size:38px}
 #splash small{color:#fff;text-shadow:0 1px 2px rgba(0,40,110,.9)}
 @media (prefers-reduced-motion:reduce){.bubbles i,.spin{animation:none}#splash{transition:none}}
+
+/* ======================= AERO GLASS PASS + IPAD LAYOUTS ======================= */
+.glass{
+  background:
+    linear-gradient(115deg,rgba(255,255,255,.34) 0,rgba(255,255,255,0) 32%,rgba(255,255,255,0) 68%,rgba(255,255,255,.16) 100%),
+    linear-gradient(rgba(255,255,255,.46),rgba(170,225,255,.18) 46%,rgba(60,165,245,.26));
+  -webkit-backdrop-filter:blur(20px) saturate(175%);backdrop-filter:blur(20px) saturate(175%);
+  border:1px solid rgba(255,255,255,.78);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.95),inset 0 0 0 1px rgba(255,255,255,.22),inset 0 0 22px rgba(170,230,255,.35),
+             0 0 0 1px rgba(10,90,180,.3),0 10px 26px rgba(0,60,150,.38)}
+.glass::before{height:46%;background:linear-gradient(rgba(255,255,255,.62),rgba(255,255,255,.06))}
+.panel h2,.log dt{text-shadow:0 0 6px rgba(255,255,255,.9),0 1px 0 rgba(255,255,255,.8)}
+.log dd,.simnote{text-shadow:0 0 5px rgba(255,255,255,.75)}
+.freeze small{text-shadow:0 0 6px rgba(255,255,255,.95)}
+
+.wmp{border:1px solid rgba(200,235,255,.85);
+  background:
+    linear-gradient(rgba(255,255,255,.5) 0,rgba(255,255,255,.08) 26px,rgba(255,255,255,0) 27px),
+    linear-gradient(rgba(90,170,240,.5) 0,rgba(20,90,180,.46) 12%,rgba(6,45,110,.5) 68%,rgba(40,130,220,.48) 100%);
+  -webkit-backdrop-filter:blur(18px) saturate(170%);backdrop-filter:blur(18px) saturate(170%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.9),inset 0 0 0 1px rgba(255,255,255,.2),inset 0 0 26px rgba(90,190,255,.3),
+             0 0 0 1px rgba(8,58,120,.55),0 12px 30px rgba(0,45,120,.5)}
+.lcd{border:1px solid rgba(190,230,255,.45);
+  background:linear-gradient(rgba(255,255,255,.26),rgba(255,255,255,.03) 44%,rgba(255,255,255,0) 45%),
+             linear-gradient(rgba(14,70,140,.6),rgba(4,30,80,.66));
+  box-shadow:inset 0 2px 8px rgba(0,10,40,.55),inset 0 0 18px rgba(80,190,255,.22),0 1px 0 rgba(255,255,255,.35)}
+.title,.meta{text-shadow:0 1px 2px rgba(0,15,50,.85),0 0 8px rgba(90,200,255,.55)}
+
+.gloss{background:linear-gradient(rgba(150,226,255,.92) 0,rgba(56,173,243,.88) 48%,rgba(12,132,221,.9) 50%,rgba(10,98,186,.92) 100%);
+  border-color:rgba(8,82,160,.9);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.65),inset 0 -8px 14px rgba(0,30,100,.28),inset 0 0 16px rgba(160,235,255,.45),
+             0 4px 0 rgba(6,74,140,.95),0 10px 18px rgba(0,50,130,.5)}
+.small{-webkit-backdrop-filter:blur(12px) saturate(160%);backdrop-filter:blur(12px) saturate(160%);
+  background:linear-gradient(rgba(255,255,255,.82) 0,rgba(205,235,255,.5) 48%,rgba(135,200,248,.44) 50%,rgba(195,230,255,.6) 100%);
+  border-color:rgba(255,255,255,.85);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.7),inset 0 0 12px rgba(255,255,255,.4),0 0 0 1px rgba(40,120,200,.5),
+             0 3px 0 rgba(60,130,195,.8),0 8px 14px rgba(0,50,130,.38)}
+.small:active{box-shadow:inset 0 3px 8px rgba(0,50,110,.5),0 0 0 1px rgba(40,120,200,.5)}
+.chip{border-color:rgba(255,255,255,.85);
+  background:linear-gradient(rgba(255,255,255,.8),rgba(215,238,255,.46) 48%,rgba(150,208,250,.4) 50%,rgba(205,232,255,.56));
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.6),0 0 0 1px rgba(60,135,205,.45),0 2px 4px rgba(0,50,120,.28)}
+.chip[aria-pressed="true"]{border-color:rgba(240,255,225,.9);
+  background:linear-gradient(rgba(205,248,150,.95),rgba(111,208,44,.9) 48%,rgba(70,173,15,.92) 50%,rgba(47,143,8,.95));
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.55),inset 0 0 10px rgba(220,255,170,.5),0 0 0 1px rgba(35,110,5,.7),0 2px 5px rgba(0,60,20,.4)}
+.sheet{background:
+    linear-gradient(115deg,rgba(255,255,255,.3) 0,rgba(255,255,255,0) 35%),
+    linear-gradient(rgba(255,255,255,.72),rgba(205,236,255,.56) 46%,rgba(140,205,250,.6))}
+.veil{background:rgba(0,50,130,.3);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px)}
+@supports not ((-webkit-backdrop-filter:blur(1px)) or (backdrop-filter:blur(1px))){
+  .glass{background:linear-gradient(rgba(255,255,255,.82),rgba(205,236,255,.72) 46%,rgba(150,210,250,.74))}
+  .wmp{background:linear-gradient(#6fb6ee 0,#2a6fc0 9%,#123f86 22%,#0b2c63 70%,#16509d 100%)}
+}
+[hidden]{display:none!important}
+/* splash can never stay up, even if a script fails */
+#splash{animation:splashout .4s 3s forwards}
+@keyframes splashout{to{opacity:0;visibility:hidden}}
+.wrap > *{min-width:0}
+
+/* iPad portrait and other wide portrait screens */
+@media (min-width:700px){
+  body{font-size:16px}
+  .wrap{max-width:820px;padding-left:max(28px,env(safe-area-inset-left,0px));padding-right:max(28px,env(safe-area-inset-right,0px));padding-bottom:40px}
+  header{padding:22px 4px 18px}
+  .logo svg{width:52px;height:52px}
+  h1{font-size:38px}
+  .tag{font-size:14px}
+  .freeze{padding:14px 18px 16px;margin-bottom:18px}
+  .freeze small{font-size:13px}
+  .freeze b{font-size:32px}
+  .wmp{padding:0 10px 12px;border-radius:16px}
+  .wmpbar{height:36px;font-size:13px}
+  .lcd{padding:14px 16px 15px;margin-top:10px}
+  .title{font-size:21px}
+  .meta{font-size:15px}
+  .random{min-height:78px;font-size:25px;margin-top:20px}
+  .row{gap:14px;margin-top:22px}
+  .small{min-height:56px;font-size:16px}
+  .panel{margin-top:22px;padding:16px 18px 18px}
+  .panel h2{font-size:14px}
+  .chips{gap:10px}
+  .chip{min-height:46px;padding:0 16px;font-size:15px}
+  .log{font-size:14px}
+  .log dt{width:120px}
+  .simnote{font-size:13px}
+  .veil{align-items:center}
+  .sheet{max-width:560px;padding:20px}
+}
+
+/* iPad landscape: media-player window with a control sidebar */
+@media (min-width:1000px) and (min-height:600px) and (orientation:landscape){
+  .wrap{max-width:1400px;display:grid;grid-template-columns:minmax(0,1fr) 370px;grid-template-rows:auto auto auto auto 1fr;
+    column-gap:22px;align-items:start;padding-bottom:24px}
+  header{grid-column:1/-1;padding:14px 4px 12px}
+  .wmp{grid-column:1;grid-row:2/6;width:100%;justify-self:center;
+    max-width:calc((100vh - 270px) * 16 / 9)}
+  .freeze{grid-column:2;grid-row:2;margin-bottom:0}
+  .random{grid-column:2;grid-row:3;margin-top:16px;min-height:72px;font-size:22px}
+  .row{grid-column:2;grid-row:4;margin-top:20px;gap:9px}
+  .small{font-size:14px;min-height:52px}
+  .panel{grid-column:2;grid-row:5;margin-top:18px;padding:14px}
+  .chip{font-size:14px;padding:0 12px;min-height:44px}
+  .log{font-size:13px}
+  .log dt{width:98px}
+}
+@supports (height:100dvh){
+  @media (min-width:1000px) and (min-height:600px) and (orientation:landscape){
+    .wmp{max-width:calc((100dvh - 270px) * 16 / 9)}
+  }
+}
 </style>
 </head>
 <body>
@@ -181,7 +290,7 @@ h1{margin:0;font-size:29px;line-height:1;font-weight:700;letter-spacing:-.5px;co
 </div>
 
 <div id="splash" aria-hidden="true">
-  <h1>OldFeed</h1>
+  <h1>AldariCorp</h1>
   <div class="spin"></div>
   <small>Rewinding the internet…</small>
 </div>
@@ -202,7 +311,7 @@ h1{margin:0;font-size:29px;line-height:1;font-weight:700;letter-spacing:-.5px;co
         <ellipse cx="20" cy="11" rx="13" ry="8" fill="url(#g2)"/>
       </svg>
       <div>
-        <h1>OldFeed</h1>
+        <h1>AldariCorp</h1>
         <p class="tag">Channel surf through the old internet</p>
       </div>
     </div>
@@ -214,7 +323,7 @@ h1{margin:0;font-size:29px;line-height:1;font-weight:700;letter-spacing:-.5px;co
   </button>
 
   <section class="wmp" aria-label="Player">
-    <div class="wmpbar"><i class="led" id="led"></i><span>OldFeed Media Player</span><span id="ch">CH 00</span></div>
+    <div class="wmpbar"><i class="led" id="led"></i><span>AldariCorp Media Player</span><span id="ch">CH 00</span></div>
     <div class="tv">
       <div id="playerSlot"></div>
       <div class="screenmsg" id="screenmsg">
@@ -264,11 +373,14 @@ h1{margin:0;font-size:29px;line-height:1;font-weight:700;letter-spacing:-.5px;co
 <div class="veil" id="sheetSettings" hidden>
   <div class="glass sheet" role="dialog" aria-label="Settings">
     <h2>⚙ Settings</h2>
-    <label>OldFeed backend URL<input type="url" id="apiBaseInput" placeholder="https://oldfeed-api.YOURNAME.workers.dev" autocapitalize="none" autocomplete="off"></label>
+    <label>AldariCorp backend URL<input type="url" id="apiBaseInput" placeholder="https://oldfeed-api.YOURNAME.workers.dev" autocapitalize="none" autocomplete="off"></label>
     <button class="linkbtn" id="saveApiBase" type="button">Save backend URL</button>
-    <p class="simnote">Once saved, OldFeed switches from the demo catalogue to live historical YouTube discovery.</p>
+    <p class="simnote">Once saved, AldariCorp switches from the demo catalogue to live historical YouTube discovery.</p>
     <label>Era starts at (optional)<input type="date" id="startDate" min="2005-04-23"></label>
     <button class="linkbtn" id="clearStart" type="button">Clear the era start</button>
+    <h3>New YouTube searches</h3>
+    <div class="chips" id="freshChips"></div>
+    <p class="simnote" id="poolNote"></p>
     <h3>Everything mix: how often each source is drawn</h3>
     <div id="weights"></div>
     <button class="linkbtn" id="resetWeights" type="button">Reset the mix</button>
@@ -481,18 +593,91 @@ var Engine = (function(){
     }
     return attempt();
   }
-  return { discover:discover, poolSize:function(){ return Object.keys(pool).length; } };
+  return { discover:discover, rollDb:rollDb, poolSize:function(){ return Object.keys(pool).length; } };
 })();
 
 /* ======================= STATE ======================= */
-var state = { cutoff:CONFIG.defaultCutoff, start:"", category:"everything", weights:{}, history:[], pos:-1, seen:{}, dead:{}, channel:0 };
+/* ======================= SAVED POOL (the Worker's database) =======================
+   Every verified search result is saved by the Worker. Drawing from the pool uses no YouTube quota.
+   If the Worker has no database yet, every call here fails quietly and live search carries on as before. */
+var Pool = (function(){
+  var size = null, enabled = !Provider.simulated;
+  function get(path){ return fetch(CONFIG.apiBase + path).then(function(r){ if (!r.ok) throw new Error("pool failed"); return r.json(); }); }
+  function refresh(){
+    if (!enabled) return Promise.resolve();
+    return get("/stats").then(function(s){ size = (s && s.pool && typeof s.total === "number") ? s.total : null; }).catch(function(){});
+  }
+  function fetchRows(opts, db){
+    return get("/random?count=6&before=" + opts.range.cutoff + (opts.range.start ? "&after=" + opts.range.start : "") + (db ? "&db=" + db : "")).then(function(res){
+      var rows = res && Array.isArray(res.videos) ? res.videos : [];
+      return rows.filter(function(v){ return isEligible(v, opts.range) && !opts.exclude[v.youtubeId]; });
+    });
+  }
+  refresh();
+  return {
+    enabled: enabled,
+    size: function(){ return size; },
+    refresh: refresh,
+    draw: function(opts){   // -> Promise<{video, trace} | null>
+      var rolled = Engine.rollDb(opts.category, opts.weights), db = rolled === "mixed" ? "" : rolled;
+      return fetchRows(opts, db).then(function(ok){
+        if (ok.length || !db || opts.category !== "everything") return ok;
+        return fetchRows(opts, "");        // that source is empty so far: draw from the whole pool
+      }).then(function(ok){
+        if (!ok.length) return null;
+        return { video:ok[0], trace:{ pool:true, db: SEEDS[ok[0].db] ? ok[0].db : null } };
+      });
+    },
+    reportDead: function(id){
+      if (!enabled) return;
+      try { fetch(CONFIG.apiBase + "/dead?id=" + encodeURIComponent(id), { method:"POST" }).catch(function(){}); } catch(e){}
+    }
+  };
+})();
+function freshChance(){   // how often Random spends YouTube quota on a new search
+  if (state.fresh === "always") return 1;
+  if (state.fresh === "never") return 0;
+  var n = Pool.size();
+  if (n === null || n < 100) return 1;
+  if (n < 1000) return .5;
+  if (n < 5000) return .2;
+  return .05;
+}
+function drawVideo(opts){
+  if (!Pool.enabled) return Engine.discover(opts);
+  var live = function(){ return Engine.discover(opts); };
+  var saved = function(){ return Pool.draw(opts).catch(function(){ return null; }); };
+  if (randFloat() < freshChance()){
+    return live().then(
+      function(r){ if (r.video || r.reason) return r; return saved().then(function(p){ return p || r; }); },
+      function(){ return saved().then(function(p){ return p || { video:null, trace:null }; }); });   // quota ran out: fall back to the pool
+  }
+  return saved().then(function(p){
+    if (p) return p;
+    if (state.fresh === "never") return { video:null, trace:null, reason:"emptypool" };
+    return live().catch(function(){ return { video:null, trace:null }; });   // lets Random reshuffle already-seen pool videos
+  });
+}
+
+var state = { fresh:"auto", cutoff:CONFIG.defaultCutoff, start:"", category:"everything", weights:{}, history:[], pos:-1, seen:{}, dead:{}, channel:0 };
 Object.keys(CONFIG.defaultWeights).forEach(function(k){ state.weights[k] = CONFIG.defaultWeights[k]; });
 try {
   var saved = JSON.parse(localStorage.getItem("oldfeed-settings-v2") || "null");
+  if (saved && /^(auto|always|never)$/.test(saved.fresh)) state.fresh = saved.fresh;
   if (saved && parseDay(saved.cutoff)){ state.cutoff = saved.cutoff; state.start = parseDay(saved.start) || ""; }
   if (saved && saved.weights) Object.keys(state.weights).forEach(function(k){ if (saved.weights[k] >= 0) state.weights[k] = +saved.weights[k]; });
 } catch(e){}
-function save(){ try { localStorage.setItem("oldfeed-settings-v2", JSON.stringify({cutoff:state.cutoff,start:state.start,weights:state.weights})); } catch(e){} }
+// Videos that would not play on this device (deleted, private, or blocked in this country) stay skipped across visits.
+var NOPLAY_KEY = "aldari-noplay";
+try { (JSON.parse(localStorage.getItem(NOPLAY_KEY) || "[]") || []).forEach(function(id){ if (typeof id === "string") state.dead[id] = 1; }); } catch(e){}
+function rememberDead(id){
+  try {
+    var list = JSON.parse(localStorage.getItem(NOPLAY_KEY) || "[]") || [];
+    if (list.indexOf(id) === -1) list.push(id);
+    localStorage.setItem(NOPLAY_KEY, JSON.stringify(list.slice(-3000)));
+  } catch(e){}
+}
+function save(){ try { localStorage.setItem("oldfeed-settings-v2", JSON.stringify({cutoff:state.cutoff,start:state.start,weights:state.weights,fresh:state.fresh})); } catch(e){} }
 function range(){ return { cutoff:state.cutoff, start:state.start }; }
 var current = null, currentTrace = null;
 
@@ -544,6 +729,8 @@ window.addEventListener("message", function(e){
     var code = +d.info;
     if (code === 2 || code === 100 || code === 101 || code === 150){   // deleted / private / embedding disabled
       state.dead[current.youtubeId] = 1;
+      Pool.reportDead(current.youtubeId);
+      rememberDead(current.youtubeId);
       state.history.splice(state.pos, 1); state.pos--;
       randomVideo(true);
     } else {
@@ -564,11 +751,28 @@ var CATS = [["everything","🌐","Everything"]].concat(DB_IDS.map(function(id){ 
 var WEIGHT_LABELS = { everyday:"🏠 Everyday", archaeology:"🕳 Archaeology", gaming:"🎮 Gaming", culture:"💿 Internet Culture",
   tech:"💻 Technology", entertainment:"🎬 Entertainment", mixed:"🎲 Fully mixed" };
 function setLed(s){ $("led").className = "led" + (s ? " "+s : ""); }
+function prettyViews(raw){
+  if (raw === null || raw === undefined || raw === "" || typeof raw === "boolean") return "";
+  var n = Number(raw);
+  if (!isFinite(n) || n < 0) return "";
+  n = Math.floor(n);
+  if (n < 10000) return n.toLocaleString("en-US") + (n === 1 ? " view" : " views");
+  var units = [[1e9,"B"],[1e6,"M"],[1e3,"K"]];
+  for (var i=0;i<units.length;i++){
+    if (n >= units[i][0]){
+      var x = Math.round(n/units[i][0]*10)/10;
+      if (x >= 1000 && i > 0){ x = Math.round(n/units[i-1][0]*10)/10; i--; }
+      return String(x).replace(/\.0$/,"") + units[i][1] + " views";
+    }
+  }
+  return "";
+}
 function renderInfo(){
   if (!current){ $("title").innerHTML = "&nbsp;"; $("meta").innerHTML = "&nbsp;"; return; }
   $("title").textContent = current.title;
   var dur = prettyDur(current.liveDuration || current.durationSeconds);
-  $("meta").textContent = current.channel + "\u2003Uploaded " + prettyDay(current.publishedAt) + (dur ? " • " + dur : "");
+  var views = prettyViews(current.viewCount);   // optional: shown only when the backend supplies it
+  $("meta").textContent = current.channel + "\u2003Uploaded " + prettyDay(current.publishedAt) + (views ? " • " + views : "") + (dur ? " • " + dur : "");
 }
 function logRow(k, v){ var d = document.createElement("div"), a = document.createElement("dt"), b = document.createElement("dd");
   a.textContent = k; b.textContent = v; d.appendChild(a); d.appendChild(b); $("log").appendChild(d); }
@@ -576,6 +780,12 @@ function renderLog(){
   $("log").textContent = "";
   var t = currentTrace;
   if (!t){ logRow("Status", "Waiting for the first search."); }
+  else if (t.pool){
+    var ps = t.db ? SEEDS[t.db] : null;
+    logRow("Source", ps ? ps.icon + " " + ps.label : "🌐 Everything");
+    logRow("Found in", "Saved pool" + (Pool.size() !== null ? " of " + Pool.size().toLocaleString("en-US") + " videos" : ""));
+    logRow("Date check", "Re-checked against the Freeze Date");
+  }
   else {
     var s = SEEDS[t.db];
     logRow("Source", (t.rolled === "mixed" ? "🎲 Fully mixed, drew " : "") + s.icon + " " + s.label);
@@ -585,7 +795,7 @@ function renderLog(){
   }
   $("simnote").textContent = Provider.simulated
     ? "Simulated search: no backend is connected, so the seed text is ignored and results come from a 25-video demo list."
-    : "Live search through " + CONFIG.apiBase;
+    : "Validated and retrieved from Aldari-DataBases";
 }
 function renderChrome(){
   $("back").disabled = state.pos <= 0;
@@ -619,7 +829,7 @@ function randomVideo(isSkip, resetDone){
   Object.keys(state.seen).forEach(function(k){ exclude[k] = 1; });
   Object.keys(state.dead).forEach(function(k){ exclude[k] = 1; });
   var wait = new Promise(function(r){ setTimeout(r, 380); });
-  Promise.all([Engine.discover({ range:range(), category:state.category, weights:state.weights, exclude:exclude, provider:Provider }), wait]).then(function(res){
+  Promise.all([drawVideo({ range:range(), category:state.category, weights:state.weights, exclude:exclude, provider:Provider }), wait]).then(function(res){
     busy = false;
     var r = res[0];
     if (r.video){
@@ -634,6 +844,7 @@ function randomVideo(isSkip, resetDone){
       randomVideo(isSkip, true); return;
     }
     if (current && resetDone){ mountPlayer(current); setLed(""); renderChrome(); return; }   // only one eligible video
+    if (r.reason === "emptypool"){ blank("No saved video fits yet. Set New YouTube searches to Auto in Settings."); return; }
     if (Provider.simulated && state.category !== "everything" && !Provider.has(state.category)){
       blank("The demo list has no " + SEEDS[state.category].label + " videos. The seeds are ready; live search needs the backend."); return;
     }
@@ -674,6 +885,18 @@ CATS.forEach(function(c){
   b.addEventListener("click", function(){ state.category = c[0]; renderChrome(); randomVideo(); });
   $("cats").appendChild(b);
 });
+[["auto","Auto"],["always","Every time"],["never","Saved pool only"]].forEach(function(f){
+  var b = document.createElement("button"); b.className = "chip"; b.type = "button"; b.dataset.f = f[0]; b.textContent = f[1];
+  b.addEventListener("click", function(){ state.fresh = f[0]; save(); renderFresh(); });
+  $("freshChips").appendChild(b);
+});
+function renderFresh(){
+  Array.prototype.forEach.call($("freshChips").children, function(c){ c.setAttribute("aria-pressed", String(state.fresh === c.dataset.f)); });
+  var n = Pool.size();
+  $("poolNote").textContent = !Pool.enabled ? "The saved pool needs the live backend."
+    : n === null ? "Saved pool: not connected. Random uses live searches only."
+    : "Saved pool: " + n.toLocaleString("en-US") + " videos. Auto searches less often as the pool grows.";
+}
 function renderWeights(){
   var box = $("weights"); box.textContent = "";
   var total = 0; Object.keys(state.weights).forEach(function(k){ total += state.weights[k]; });
@@ -692,7 +915,7 @@ Array.prototype.forEach.call(document.querySelectorAll(".veil"), function(v){
 });
 document.addEventListener("keydown", function(e){ if (e.key === "Escape"){ $("sheetFreeze").hidden = true; $("sheetSettings").hidden = true; } });
 $("freezeBtn").addEventListener("click", function(){ openSheet("sheetFreeze"); });
-$("settingsBtn").addEventListener("click", function(){ renderWeights(); openSheet("sheetSettings"); });
+$("settingsBtn").addEventListener("click", function(){ renderWeights(); renderFresh(); Pool.refresh().then(renderFresh); openSheet("sheetSettings"); });
 $("cutoffDate").addEventListener("change", function(){ if (this.value) setRange(this.value, state.start); else renderChrome(); });
 $("startDate").addEventListener("change", function(){ setRange(state.cutoff, this.value); });
 $("clearStart").addEventListener("click", function(){ setRange(state.cutoff, ""); });
@@ -701,7 +924,7 @@ $("saveApiBase").addEventListener("click", function(){
   var v = $("apiBaseInput").value.trim().replace(/\/$/, "");
   if (v && !/^https:\/\//i.test(v)){ alert("Backend URL must start with https://"); return; }
   try { if (v) localStorage.setItem("oldfeed-api-base", v); else localStorage.removeItem("oldfeed-api-base"); } catch(e){}
-  alert(v ? "Backend saved. OldFeed will reload into live mode." : "Backend cleared. OldFeed will reload into demo mode.");
+  alert(v ? "Backend saved. AldariCorp will reload into live mode." : "Backend cleared. AldariCorp will reload into demo mode.");
   location.reload();
 });
 $("resetWeights").addEventListener("click", function(){
