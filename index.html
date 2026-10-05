@@ -698,7 +698,7 @@ $("startDate").addEventListener("change", function(){ setRange(state.cutoff, thi
 $("clearStart").addEventListener("click", function(){ setRange(state.cutoff, ""); });
 $("apiBaseInput").value = CONFIG.apiBase;
 $("saveApiBase").addEventListener("click", function(){
-  var v = $("apiBaseInput").value.trim().replace(/\\/$/, "");
+  var v = $("apiBaseInput").value.trim().replace(/\/$/, "");
   if (v && !/^https:\/\//i.test(v)){ alert("Backend URL must start with https://"); return; }
   try { if (v) localStorage.setItem("oldfeed-api-base", v); else localStorage.removeItem("oldfeed-api-base"); } catch(e){}
   alert(v ? "Backend saved. OldFeed will reload into live mode." : "Backend cleared. OldFeed will reload into demo mode.");
